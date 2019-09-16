@@ -3,10 +3,6 @@ $('document').ready(function(){
 
            e.preventDefault();
 
-           $.ajaxSetup({
-		        headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}			        		
-		       });
-
            var name = $('#name').val();
            var surname = $('#surname').val();
            var address = $('#address').val();
